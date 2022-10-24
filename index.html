@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Mengganti Background</title>
+    <style>
+      body {
+        padding: 25px;
+        border-color: white;
+        color: black;
+        font-size: 25px;
+      }
+
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+      .blue-mode {
+        background-color: blue;
+        color: white;
+      }
+
+      .green-mode {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Latihan Mengganti Background Halaman Website</h2>
+    <p>Silahkan klik tombol dibawah ini</p>
+    <button onclick="myFunction()">Ganti Warna Hitam</button>
+
+    <button onclick="myFunction2()">Ganti Warna Biru</button>
+
+    <button onclick="myFunction3()">Ganti Warna Hijau</button>
+
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+
+      function myFunction2() {
+        var element = document.body;
+        element.classList.toggle("blue-mode");
+      }
+
+      function myFunction3() {
+        var element = document.body;
+        element.classList.toggle("green-mode");
+      }
+    </script>
+  </body>
+</html>
